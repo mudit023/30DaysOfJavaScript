@@ -54,10 +54,6 @@ function playSound(input){
       const tink = new Audio('./Resources/Sounds/tink.wav');
       tink.play(); 
       break;
-  
-    default:
-      alert("Wrong key");
-      break;
   }
 }
 

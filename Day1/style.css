@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --base-dark-color: #020c14;
+  --primary-dark-color: #fff;
+  --secondary-dark-color: #ffc600;
 }
 
 body{
-  background: url(./Resources/Images/background.jpg) bottom center;
-  background-size: cover;
+  /* background: url(./Resources/Images/background.jpg) bottom center;
+  background-size: cover; */
+  background: var(--base-dark-color);
   font-family: 'Roboto Slab', serif;
   min-height: 100vh;
   display: grid;
@@ -22,7 +26,7 @@ body{
   justify-content: center;
   gap: 1rem;
   width: 80%;
-  color: rgb(243, 219, 83);
+  color: var(--secondary-dark-color);
   font-size: 1rem;
   /* border: rgb(45, 175, 214) solid 6px; */
 }
@@ -39,15 +43,15 @@ body{
 
 .drum-key .title{
   font-size: 2.4rem;
-  color: #fff;
+  color: var(--primary-dark-color);
 }
 .drum-key .des{
   font-size: .8rem;
-  color: rgb(243, 219, 83);
+  color: var(--secondary-dark-color);
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: var(--secondary-dark-color);
+  box-shadow: 0 0 1rem --secondary-dark-color;
 }
